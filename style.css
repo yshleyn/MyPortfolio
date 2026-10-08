@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #090414;
+    --second-bg-color: #191919;
+    --text-color: white;
+    --main-color: #0077ff;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover, 
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    text-shadow: 0 0 25px var(--main-color),
+                 0 0  50px var(--main-color)
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 10rem 9% 5rem;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+.home-content{
+    font-size: 5.2rem;
+    font-weight: 700;
+    padding-left: 5%;
+}
+.span {
+    color: var(--main-color);
+}
+.logo span {
+    text-shadow: 0 0 25px var(--main-color),
+                 0 0 100px var(--main-color);
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 5rem;
+    font-size: 9rem;
+}
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    padding-left: 50px;
+}
+.home-img {
+    border-radius: 50%;
+}
+.home-img img {
+    position: relative;
+    width: 20vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.home-content p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-top: 5rem;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 2rem 2.5rem;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    border: 4px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1.05);
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--main-bg-color);
+}
+.about-img {
+    border-radius: 50%;
+}
+.about-img img {
+    position: relative;
+    width: 100vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Heading {
+    text-align: center;
+    font-size: 8rem;
+}
+.about-content h2 {
+    text-align: left;
+    line-height: 1.5;
+    padding-right: 100%;
+}
+.about-content p {
+    font-size: 1.6rem;
+    margin: 1rem 0 2rem;
+}
+
+
+
+.works {
+    background: var(--main-bg-color);
+}
+
+.works .heading {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 0 9%;
+}
+
+.works-box {
+    background: var(--bg-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.works-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 2.5rem var(--main-color);
+}
+
+.works-box i {
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.works-box h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.works-box p {
+    font-size: 1.4rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+/* Activity Links List inside the box */
+.activity-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.activity-list li {
+    margin: 1rem 0;
+}
+
+.activity-list li a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.activity-list li a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Dimmed look for empty Quizzes and Exams boxes */
+.placeholder-box {
+    opacity: 0.6;
+    border-style: dashed;
+}
