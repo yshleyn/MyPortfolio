@@ -244,6 +244,31 @@ body {
     text-decoration: underline;
 }
 
+/* Quizzes Links List inside the box */
+.quiz-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.quiz-list li {
+    margin: 1rem 0;
+}
+
+.quiz-list li a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.quiz-list li a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
 /* Dimmed look for empty Quizzes and Exams boxes */
 .placeholder-box {
     opacity: 0.6;
